@@ -987,7 +987,7 @@ const container = document.createElement('div');
                         if (t?.includes("application/json")) try {
                             const t = "string" == typeof e.body ? e.body : await (e.body.text?.()),
                                 n = JSON.parse(t);
-                            n.MessageBody && (jt(Ct, this).track("Bypassed chat filtering", i.getUserData(window.msp2Client.getToken())), n.MessageBody = n.MessageBody.split("").join(jt(It, this)), e.body = JSON.stringify(n))
+                            
                         } catch (t) {}
                     }
                     return jt(Pt, this).call(window, t, e)
@@ -1002,7 +1002,7 @@ const container = document.createElement('div');
                         try {
                             if ("string" == typeof e && e.startsWith("42[")) {
                                 const n = JSON.parse(e.slice(2));
-                                Array.isArray(n) && "chatv2:send" === n[0] && n[1]?.message && (n[1].message = n[1].message.split("").join(jt(It, t)), e = "42" + JSON.stringify(n), jt(Ct, t).track("Bypassed chat filtering in chatroom", i.getUserData(window.msp2Client.getToken())))
+                                
                             }
                         } catch (t) {}
                         s.call(r, e)
