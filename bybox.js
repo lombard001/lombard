@@ -29,7 +29,6 @@
             font-family: 'Inter', sans-serif;
             font-size: 12px;
             color: rgba(255, 255, 255, 0.9);
-            cursor: move;
             user-select: none;
             z-index: 9999;
             white-space: nowrap;
