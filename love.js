@@ -157,7 +157,6 @@ const container = document.createElement('div');
     };
 })();
 
-
 !function (t, e) {
     "object" == typeof exports && "object" == typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define([], e) : "object" == typeof exports ? exports.MSP2Client = e() : t.MSP2Client = e()
 }(this, (() => (() => {
