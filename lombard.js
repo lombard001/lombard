@@ -668,7 +668,7 @@
                 d: !1
             }), ct(this, wt, f.getInstance()), ct(this, ft, window.fetch), ct(this, mt, {
                 b: "https://api.msp2cheats.eu/purchase",
-                x: "https://msp2.pages.dev/api/listings"
+                x: "https://api.xerus.lol/listings"
             }), ct(this, gt, (() => dt(xt, this).call(this))), ct(this, bt, (t => {
                 if (!dt(lt, this) || "string" != typeof t) return !1;
                 if (t.includes("/profileinventory/v1/profiles/") && t.includes("/games/j68d/inventory/items")) return !0;
@@ -693,7 +693,7 @@
                         })).forEach((t => {
                             let [e, i] = t;
                             return n.searchParams.append(e, i)
-                        })), n.searchParams.append("diamondPack", "True"), n.toString()
+                        })), n.toString()
                     }
                     return t
                 } catch {
